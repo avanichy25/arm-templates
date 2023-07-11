@@ -19,7 +19,7 @@
     "variables": { },
     "resources": [
         {
-            "name": "sqlserver500505",
+            "name": "sqlserver00505",
             "type": "Microsoft.Sql/servers",
             "apiVersion": "2021-08-01-preview",
             "location": "[resourceGroup().location]",
@@ -29,12 +29,12 @@
               }
         },
         {
-            "name": "[format('{0}/{1}', 'sqlserver500505', 'appdb')]",
+            "name": "[format('{0}/{1}', 'sqlserver00505', 'appdb')]",
             "type": "Microsoft.Sql/servers/databases",
             "apiVersion": "2021-08-01-preview",
             "location": "[resourceGroup().location]",            
             "dependsOn": [
-                "[resourceId('Microsoft.Sql/servers', 'sqlserver500505')]"
+                "[resourceId('Microsoft.Sql/servers', 'sqlserver00505')]"
             ],
             "sku": {
                 "name": "Basic",
