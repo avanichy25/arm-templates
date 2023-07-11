@@ -1,0 +1,7 @@
+az resource delete -g temptetst -n "sqlserver600505/appdb" --resource-type "Microsoft.Sql/servers/databases"
+
+az resource delete -g  temptest -n "sqlserver600505" --resource-type "Microsoft.Sql/servers"
+
+az resource delete -g temptest -n newapp94848 --resource-type "Microsoft.Web/sites"
+
+az resource delete -g temptest -n plan787878 --resource-type "Microsoft.Web/serverfarms"
